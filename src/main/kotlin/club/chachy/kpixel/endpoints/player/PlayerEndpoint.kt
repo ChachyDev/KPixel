@@ -8,7 +8,7 @@ import club.chachy.kpixel.endpoints.player.data.quests.SlothpixelQuestResponse
 import club.chachy.kpixel.endpoints.player.data.status.SlothpixelCurrentPlayerActivityResponse
 import club.chachy.kpixel.utils.getSlothpixelRoute
 import club.chachy.kpixel.utils.http
-import java.util.UUID
+import java.util.*
 
 class PlayerEndpoint(token: String? = null) : Endpoint(token) {
     /**
