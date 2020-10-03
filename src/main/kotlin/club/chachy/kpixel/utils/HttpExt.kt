@@ -15,6 +15,7 @@ val http = HttpClient(Apache) {
 }
 
 suspend inline fun <reified T> HttpClient.getSlothpixelRoute(path: String, token: String?) =
-    get<T>("https://api.slothpixel.me/api$path") {
+    get<T>("https://api.slothpixel.me/api$path")
+    {
         token?.takeIf { it.isNotEmpty() }?.let { parameter("key", it) }
     }
